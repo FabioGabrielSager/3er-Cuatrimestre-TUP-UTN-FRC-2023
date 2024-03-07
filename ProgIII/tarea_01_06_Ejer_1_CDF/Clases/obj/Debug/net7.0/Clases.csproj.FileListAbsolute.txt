@@ -1,0 +1,12 @@
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/bin/Debug/net7.0/Clases.deps.json
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/bin/Debug/net7.0/Clases.dll
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/bin/Debug/net7.0/Clases.pdb
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/obj/Debug/net7.0/Clases.csproj.AssemblyReference.cache
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/obj/Debug/net7.0/Clases.GeneratedMSBuildEditorConfig.editorconfig
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/obj/Debug/net7.0/Clases.AssemblyInfoInputs.cache
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/obj/Debug/net7.0/Clases.AssemblyInfo.cs
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/obj/Debug/net7.0/Clases.csproj.CoreCompileInputs.cache
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/obj/Debug/net7.0/Clases.dll
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/obj/Debug/net7.0/refint/Clases.dll
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/obj/Debug/net7.0/Clases.pdb
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/obj/Debug/net7.0/ref/Clases.dll

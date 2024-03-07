@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Ejercicio_7 </title>
+
+    <style>
+      label {font-size: 14; display: block;}
+      b {position: relative; left: 20px;}
+      input { border-bottom: solid; border-top: none; border-left: none; border-right: none;}
+      .inputs-position {position: relative; left: 200px;}
+    </style>
+  </head>
+  
+  <body>
+    <hr>
+   	<h1>Formulario de registro</h1>
+    <form>
+      <b> Nombres y apellidos </b> <br>
+	<div class="inputs-position">
+	  <input type="text" id="Name" style="width: 200px">
+	  <label for="Name"> Nombre </label>
+	  <input type="text" id="First-last-name" style="width: 300px";>
+	  <label for="First-last-name"> Primer apellido </label>
+	  <input type="text" id="Second-last-name" style="width: 300px">
+	  <label for="Second-last-name"> Segundo apellido </label>
+	</div>
+      <hr>
+	<b style="position: relative; left: 120px";>Dirección</b> <br>
+    <div class="inputs-position">
+      <input type=text id="Address" style="width: 300px">
+      <label for="Address"> Calle, número, piso, puerta </label>
+
+      <div style="display: flex;">
+	<div style="flex: 1;">
+	  <input type=text id="Zip-code" style="width: 110px;">
+	  <label for="Zip-code" style="display: block;">Código postal</label>
+	</div>
+	<div style="flex: 1; position: relative; right: 500px;">
+          <input type="text" id="Town">
+	  <label for="Town">Municipio</label>
+	</div>
+      </div>
+
+    <div style="display: flex;">
+      <div style="flex: 1;">
+	<select name="States" id="State" style="width: 110px;"></select>
+	<label for="State" style="display: block;">Provincia</label>
+      </div>
+      <div style="flex: 1; position: relative; right: 500px;">
+        <select name="Countries" id="Country">
+	  <option value="Argentina"> Argentina </option>
+	  <option value="Peru"> Peru </option>
+	</select>
+	<label for="Country">País</label>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <b style="position: relative; left: 150px";>Email</b> <br>
+
+  <div class="inputs-position">
+    <input type="text">
+  </div>
+  <hr>
+
+  <b style="position: relative; left: 125px";>Teléfono</b> <br>
+
+  <div class="inputs-position">
+    <div style="display: flex;">
+      <div style="flex: 1;">
+	<input type=text id="Fijo" style="width: 110px;">
+	<label for="Fijo" style="display: block;">Fijo</label>
+      </div>
+      <div style="flex: 1">
+        <input type="text" id="Movil">	
+	<label for="Movil">Movil</label>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+  <input type="submit" value="Registrar" style="position: relative; left: 1000px;">
+
+    </form>
+
+  </body>
+</html>

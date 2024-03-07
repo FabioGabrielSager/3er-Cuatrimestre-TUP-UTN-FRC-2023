@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eventos</title>
+        <style>
+            .contenedor {
+                padding: 20px;
+                margin: 10px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenedor" 
+            onmouseover="mouseentro()" onmouseout="mousesalio()">
+            <h1>Hola Mundo</h1>
+        </div>
+
+        <!-- <button>Ocultar</button>
+        <button>Mostrar</button>
+        <button>Ocultar/Mostrar</button> -->
+
+        <button id="ocultar">Ocultar</button>
+        <button class="mostrar">Mostrar</button>
+        <input type="button" value="Ocultar/Mostrar">
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        
+        <script>
+            $().ready(function() {
+                alert('documento cargado')
+
+                $('#ocultar').click(() => {
+                    $('.contenedor').hide();
+                })
+
+                $('.mostrar').click(() => {
+                    $('.contenedor').show();
+                })
+
+                $('input').click(() => {
+                    $('.contenedor').toggle();
+                })
+            });
+        </script>
+        <!-- <script>
+            const boton = document.getElementsByTagName('button')[0]
+            boton.addEventListener('click', () => {
+                const contenedor = document.getElementsByClassName('contenedor')[0]
+                contenedor.style.display = 'none'
+            })
+
+            const botonMostrar = document.getElementsByTagName('button')[1]
+            botonMostrar.addEventListener('click', () => {
+                const contenedor = document.getElementsByClassName('contenedor')[0]
+                contenedor.style.display = 'block'
+            })
+
+            // window.addEventListener('load', () => {
+            //     alert('documento cargado')
+            // })
+
+            // let visible = true
+            // const botonOcultarMostrar = document.getElementsByTagName('button')[2]
+            // botonOcultarMostrar.addEventListener('click', () => {
+            //     const contenedor = document.getElementsByClassName('contenedor')[0]
+            //     contenedor.style.display = visible ? 'none' : 'block'
+            //     visible = !visible;
+            // })
+
+            const botonOcultarMostrar = document.getElementsByTagName('button')[2]
+            botonOcultarMostrar.addEventListener('click', () => {
+                const contenedor = document.getElementsByClassName('contenedor')[0]
+                const contenedorDisplay = contenedor.style.display === 'none' 
+                                                ? 'block' : 'none'
+                contenedor.style.display = contenedorDisplay
+            })
+
+            function mouseentro() {
+                alert('mouse entro')
+            }
+            
+            function mousesalio() {
+                alert('mouse salio')
+            }
+
+            const contenedor = document.getElementsByTagName('div')[0]
+            contenedor.addEventListener('mouseup', function() {
+                contenedor.style.backgroundColor = 'red'
+                // alert('soltó click')
+            })
+
+            contenedor.addEventListener('mousedown', function() {
+                contenedor.style.backgroundColor = 'blue'
+                // alert('hizo click')
+            })
+        </script> -->
+    </body>
+</html>

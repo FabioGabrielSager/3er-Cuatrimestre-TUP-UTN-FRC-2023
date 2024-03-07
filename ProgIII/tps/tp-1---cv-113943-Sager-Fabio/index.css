@@ -1,0 +1,45 @@
+.navbar {
+    background-color: rgb(144, 22, 144);
+    font-size: smaller;
+}
+
+.h {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-purple {
+    color: purple;
+}
+
+.text-purple-blue{
+    color: #674ea7;
+}
+
+.info-background{
+    background-color: rgb(202, 98, 98);
+}
+
+.error-class{
+    font-style: italic;
+    color: red;
+}
+
+#btn-contactar{
+    position: fixed;
+    left: end;
+    bottom: 10px;
+    right: 10px;
+}
+
+#presentacion{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#formacion{
+    font-size: 10px;
+}
+
+body{
+    background-color: indianred;
+    overflow-y: hidden;
+}

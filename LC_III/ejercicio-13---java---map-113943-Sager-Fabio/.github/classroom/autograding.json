@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Test Example",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase1\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 20
+    },
+    {
+      "name": "Test Simple",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase2\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 20
+    },
+    {
+      "name": "Test Empty",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase3\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 20
+    },
+    {
+      "name": "Test All",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase4\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 20
+    },
+    {
+      "name": "Test Override",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase5\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 20
+    }
+  ]
+}

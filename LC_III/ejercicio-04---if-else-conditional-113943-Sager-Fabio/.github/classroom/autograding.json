@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Test Example 1",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase1\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Example 2",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase2\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Condition 1",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase3\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Condition 1 odd",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase4\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Condition 2",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase5\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Condition 2 Border",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase6\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test Condition 2 odd",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase7\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Condition 3",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase8\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Border 1",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase9\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Border 100",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase10\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    }
+  ]
+}

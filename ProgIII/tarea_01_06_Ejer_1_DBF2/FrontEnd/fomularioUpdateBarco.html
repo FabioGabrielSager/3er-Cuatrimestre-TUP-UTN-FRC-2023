@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parcial recuperatorio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container-fluid vh-100 d-flex align-items-center justify-content-center" style="background-color: aqua;">
+        <div class="container p-3" 
+        style="background-color: rgb(113, 198, 198); border-style: dotted; border-width: 2px; border-radius: 0.5%;
+        border-color: rgb(185, 229, 229);">
+            <h1>Actualizar usuario</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="nroMatricula" class="form-label">Número de matricula</label>
+                    <input type="number" class="form-control" id="nroMatricula" name="nroMatricula">
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="nroAmerre" class="form-label">Número de amerre</label>
+                    <input type="number" class="form-control" id="nroAmerre" name="nroAmerre">
+                </div>
+                <div class="mb-3">
+                    <label for="cuota" class="form-label">Cuota</label>
+                    <input type="number" step="0.1" min="0" class="form-control" id="cuota" name="cuota">
+                </div>
+                <div class="mb-3">
+                    <label for="socio" class="form-label">Socio</label>
+                    <input type="text" class="form-control" id="socio" name="socio" disabled>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        $(document).ready(function () {
+            let id;
+            // $.ajax({
+            //     type: "GET",
+            //     url: `http://localhost:8080/api/Barco/GetBarco`,
+            //     dataType: "json",
+            //     success: function (response) {
+            //         if(response.ok){
+            //             id = response.barco.id;
+            //             $('#nroMatricula').val(response.barco.nroMatricula);
+            //             $('#nombre').val(response.barco.nombre);
+            //             $('#nroAmerre').val(response.barco.nroAmarre);
+            //             $('#cuota').val(response.barco.cuota);
+            //             $('#socio').val(response.nombreYApellidoSocio);
+            //         }
+            //         else {
+            //             console.log("Hubo un error: " + response.mensajeInfo);
+            //         }
+            //     },
+            fetch("http://localhost:8080/api/Barco/GetBarco")
+                .then(response => response.json())
+                .then(response => {
+                    if (response.ok) {
+                        id = response.barco.id;
+                        $('#nroMatricula').val(response.barco.nroMatricula);
+                        $('#nombre').val(response.barco.nombre);
+                        $('#nroAmerre').val(response.barco.nroAmarre);
+                        $('#cuota').val(response.barco.cuota);
+                        $('#socio').val(response.nombreYApellidoSocio);
+                    }
+                    else {
+                        console.log("Hubo un error: " + response.mensajeInfo);
+                    }
+                })
+            });
+
+            $('form').validate({
+                rules: {
+                    nroMatricula: {
+                        required: true,
+                        digits: true
+                    },
+                    nombre: "required",
+                    nroAmarre: {
+                        required: true,
+                        digits: true
+                    },
+                    cuota: {
+                        required: true,
+                        number: true
+                    }
+                },
+                messages: {
+                    nroMatricula: {
+                        required: "Debe ingresar un número de matricula",
+                        digits: "Debe ingresar un número de matricula valido"
+                    },
+                    nombre: "Debe ingresar un nombre para el barco",
+                    nroAmarre: {
+                        required: "Debe ingresar un número de amarre",
+                        digits: "El número de amarre solo puede estar compuesto por digitos"
+                    },
+                    cuota: {
+                        required: "Debe ingresar una cuota",
+                        number: "La cuota debe tener un formato valido, solo se permiten números"
+                    }
+                },
+                submitHandler: function (form) {
+                    const request = {
+                        "id": id,
+                        "nroMatricula": $('#nroMatricula').val(),
+                        "nombre": $('#nombre').val(),
+                        "nroAmarre": $('#nroAmerre').val(),
+                        "cuota": $('#cuota').val()
+                    }
+
+                    // $.ajax({
+                    //     type: "PUT",
+                    //     url: "http://localhost:8080/api/Barco/UpdateBarco",
+                    //     data: JSON.stringify(request),
+                    //     contentType: "application/json",
+                    //     success: function (response) {
+                    //         if(response.ok) {
+                    //             alert("Se actualizo el socio correctamente");
+                    //             form.submit();
+                    //         }
+                    //         else{
+                    //             alert("Hubo un error: " + response.mensajeInfo)
+                    //         }
+                    //     },
+                    //     error: function(e){
+                    //         alert("Hubo un error");
+                    //     }
+                    // });
+
+                    fetch("http://localhost:8080/api/Barco/UpdateBarco", {
+                        body: JSON.stringify(request),
+                        method: "put",
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    })
+                    .then((respuesta) => respuesta.json())
+                    .then((respuesta) => {
+                        if(respuesta.ok){
+                            alert("Se actualizo el socio correctamente");
+                            form.submit();
+                        }
+                        else{
+                            alert("Hubo un error: " + respuesta.mensajeInfo)
+                        }
+                    });
+                 },
+                invalidHandler: function (event, validator) {
+                    var errors = validator.numberOfInvalids();
+                    if (errors) {
+                        var message = errors == 1
+                            ? 'Hay un error en una casilla. Va a ser marcada'
+                            : 'Hay ' + errors + ' casillas con errores. Van a ser resaltadas';
+                        alert(message);
+                    } 
+                }
+
+            })
+    </script>
+
+</body>
+
+</html>

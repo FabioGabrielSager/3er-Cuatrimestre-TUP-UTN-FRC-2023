@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eventos</title>
+        <style>
+            .contenedor {
+                padding: 20px;
+                margin: 10px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="boton" onclick="eventoBoton()">Boton</button>
+        <button>Boton con listener</button>
+
+        <div class="contenedor">
+            <h1>Hola</h1>
+        </div>
+        <div class="contenedor">
+            <h1>Mundo</h1>
+        </div>
+        <div class="contenedor">
+            <h1>!</h1>
+        </div>
+
+        <script>
+            const boton = document.getElementById('boton');
+            boton.style.backgroundColor = 'red';
+
+            function eventoBoton() {
+                alert('boton presionado')
+            }
+
+            // const boton = document.getElementsByTagName('button').item(1);
+            const boton2 = document.getElementsByTagName('button')[1];
+            // boton2.addEventListener('click', function() {
+            //     alert('boton 2 presionado')
+            // })
+            boton2.addEventListener('click', (evento) => {
+                console.log(evento)
+                alert('boton 2 presionado')
+            })
+
+            const contenedores = document.getElementsByClassName('contenedor')
+            console.log(contenedores)
+        </script>
+    </body>
+</html>

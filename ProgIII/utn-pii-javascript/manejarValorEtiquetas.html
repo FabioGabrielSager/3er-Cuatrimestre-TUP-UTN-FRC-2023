@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manejar valor etiquetas</title>
+    </head>
+    <body>
+        <p id="parrafoConNegrita">Este texto <b>es uno importante</b></p>
+        <p id="parrafoNormal">Este texto es uno importante</p>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const parrafoConNegrita = document.getElementById('parrafoConNegrita')
+                const parrafoNormal = document.getElementById('parrafoNormal')
+                console.log(parrafoConNegrita.innerText)
+                console.log(parrafoNormal.innerText)
+
+                console.log('----------')
+
+                console.log(parrafoConNegrita.innerHTML)
+                console.log(parrafoNormal.innerHTML)
+
+                parrafoConNegrita.innerHTML = 'Este es otro texto';
+
+            });
+        </script>
+    </body>
+</html>

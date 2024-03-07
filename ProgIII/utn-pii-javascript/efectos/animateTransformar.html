@@ -1,0 +1,30 @@
+<html>
+
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+      $(document).ready(function () {
+        $("#animar").click(function(){
+         $("#div1").animate({
+            left:'250px',
+            opacity: '0.5',
+            height: '150px',
+            width: '150px'
+         })
+        });
+      });
+   </script>
+</head>
+
+<body>
+   <h2>Quiero ver una animación</h2>
+   <button id="animar">Realizar animación</button>
+   <br>
+   <div id="div1" style="background: blueviolet; height: 100px; width: 100px; position: absolute;">
+     
+   </div>
+   <br>
+  
+</body>
+
+</html>

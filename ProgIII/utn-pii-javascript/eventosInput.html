@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eventos Etiqueta de Entrada (INPUT)</title>
+    </head>
+    <body>
+        <input type="text" onfocus="cambiarColor(this, 'red')" 
+                            onblur="cambiarColor(this, 'black')">
+
+        <script>
+            function cambiarColor(selector, color) {
+                selector.style.color = color;
+            }
+        </script>
+    </body>
+</html>

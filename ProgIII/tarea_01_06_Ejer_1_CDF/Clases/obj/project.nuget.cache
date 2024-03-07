@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XVopkIxRHiOx7WwKVeC7lJIzrz/hEZphV4XLHUQ9myg3Ewv9FzwlzoXHIGBx33HuSLEs342Lgjukb5Ih4fpwfQ==",
+  "success": true,
+  "projectFilePath": "/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_1_CDF/Clases/Clases.csproj",
+  "expectedPackageFiles": [
+    "/home/shackgerc/.nuget/packages/microsoft.netcore.app.ref/7.0.8/microsoft.netcore.app.ref.7.0.8.nupkg.sha512",
+    "/home/shackgerc/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.8/microsoft.aspnetcore.app.ref.7.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

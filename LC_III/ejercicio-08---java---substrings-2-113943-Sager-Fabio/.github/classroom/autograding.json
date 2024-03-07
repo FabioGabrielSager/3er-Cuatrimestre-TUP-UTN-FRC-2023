@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Test Example",
+      "setup": "",
+      "run": "mvn test -Dtest=\"SubStringHandlerTest#testCase1\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test CamelCase ",
+      "setup": "",
+      "run": "mvn test -Dtest=\"SubStringHandlerTest#testCase2\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test length",
+      "setup": "",
+      "run": "mvn test -Dtest=\"SubStringHandlerTest#testCase3\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Length 2",
+      "setup": "",
+      "run": "mvn test -Dtest=\"SubStringHandlerTest#testCase4\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test short",
+      "setup": "",
+      "run": "mvn test -Dtest=\"SubStringHandlerTest#testCase5\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Alphabet",
+      "setup": "",
+      "run": "mvn test -Dtest=\"SubStringHandlerTest#testCase6\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Alphabet 2",
+      "setup": "",
+      "run": "mvn test -Dtest=\"SubStringHandlerTest#testCase7\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Alphabet 3",
+      "setup": "",
+      "run": "mvn test -Dtest=\"SubStringHandlerTest#testCase8\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Alphabet 4",
+      "setup": "",
+      "run": "mvn test -Dtest=\"SubStringHandlerTest#testCase9\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test Alphabet 5",
+      "setup": "",
+      "run": "mvn test -Dtest=\"SubStringHandlerTest#testCase10\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    }
+  ]
+}

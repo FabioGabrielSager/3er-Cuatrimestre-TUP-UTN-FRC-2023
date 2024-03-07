@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parcial formulario</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="errorClass.css" />
+  </head>
+
+  <body>
+    
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+      <div class="container me-3 ms-3">
+        <h1 class="mb-3">Alta vuelo</h1>
+        <form>
+          <div class="mb-3">
+            <label for="tipoVuelo" class="form-label">Tipo vuelo</label>
+            <select
+              class="form-select"
+              name="tipoVuelo"
+              id="tipoVuelo"
+              aria-label="">
+              <option selected disabled>Seleccionar</option>
+              <option value="Internacional">Internacional</option>
+              <option value="Cabotaje">Cabotaje</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="clase" class="form-label">Clase</label>
+            <select class="form-select" name="clase" id="clase" aria-label="">
+              <option selected disabled>Seleccionar</option>
+              <option value="Primera">Primera</option>
+              <option value="Turista">Turista</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="origen" class="form-label">Origen</label>
+            <input type="text" class="form-control" id="origen" name="origen" />
+          </div>
+          <div class="mb-3">
+            <label for="costo" class="form-label">Costo</label>
+            <input type="text" class="form-control" id="costo" name="costo" />
+          </div>
+          <div class="mb-3">
+            <label for="fecha" class="form-label">Fecha</label>
+            <input type="date" class="form-control" id="fecha" name="fecha" />
+          </div>
+          <div class="mb-3">
+            <label for="hora" class="form-label">Hora de partida</label>
+            <input type="time" class="form-control" id="hora" name="hora" />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("form").validate({
+          rules: {
+            tipoVuelo: "required",
+            clase: "required",
+            origen: "required",
+            costo: {
+              required: true,
+              number: true,
+            },
+            fecha: {
+              required: true,
+              date: true,
+            },
+            hora: {
+              required: true,
+            },
+          },
+          messages: {
+            tipoVuelo: "Debe seleccionar el tipo de vuelo",
+            clase: "Debe seleccionar la clase",
+            origen: "Debe ingresar el origen del vuelo",
+            costo: {
+              required: "Debe ingresar el costo del vuelo",
+              number: "El costo debe tener un formato valido",
+            },
+            fecha: {
+              required: "Debe ingresar una fecha",
+              date: "La fecha debe tener un formato valido",
+            },
+            hora: {
+              required: "Debe ingresar una hora",
+            },
+          },
+          errorClass: "error-class",
+          submitHandler: function (form) {
+            alert("El vuelo ha sido cargado correctamente");
+            form.submit();
+          },
+          invalidHandler: function (event, validator) {
+            var errors = validator.numberOfInvalids();
+            if (errors) {
+              var message =
+                errors == 1
+                  ? "Hay un error en una casilla. Va a ser remarcada"
+                  : "Cometio errores en " +
+                    errors +
+                    " casillas. Van a ser marcadas.";
+              alert(message);
+            }
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

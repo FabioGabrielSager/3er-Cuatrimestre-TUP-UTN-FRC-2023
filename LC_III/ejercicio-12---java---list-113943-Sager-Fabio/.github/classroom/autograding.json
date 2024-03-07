@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Example Test",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase1\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Simple Test",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase2\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 20
+    },
+    {
+      "name": "Test Delete",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase3\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 20
+    },
+    {
+      "name": "Test Delete 2",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase4\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 20
+    },
+    {
+      "name": "Test Border",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase5\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 15
+    },
+    {
+      "name": "Test Border 2",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase6\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 15
+    }
+  ]
+}

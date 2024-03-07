@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Test Example 0",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AnagramsHandlerTest#testCase1\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 30
+    },
+    {
+      "name": "Test Example 1",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AnagramsHandlerTest#testCase2\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 30
+    },
+    {
+      "name": "Test Example 2",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AnagramsHandlerTest#testCase3\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 40
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .error-class{
+            font-size: smaller;
+            color: red;
+            font-style: italic;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container-fluid vh-100 d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1>Eliminar docente</h1>
+            <form>
+                <div class="mb-3">
+                  <label for="id" class="form-label">Id</label>
+                  <input type="number" class="form-control" id="id" name="id" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-primary">Eliminar</button>
+              </form>
+        </div>
+    </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('form').validate({
+                rules: { id: "required"},
+                messages: {id: "Debe ingredar un ID"},
+                errorClass: "error-class",
+                submitHandler: function (form) {
+                    $.ajax({
+                        type: "DELETE",
+                        url: `http://localhost:8080/eliminarDoc/${$('#id').val()}`,
+                        dataType: "json",
+                        success: function (response) {
+                            if(response.ok){
+                                alert(response.mensajeInfo);
+                                form.submit();
+                            }
+                            else {
+                                alert(response.mensajeInfo, "Error", response.error);
+                            }
+                        },
+                        error: function (e) { 
+                            alert(e);
+                         }
+                    });
+                  },
+                invalidHandler: function(event, validator) {
+                    // 'this' refers to the form
+                    var errors = validator.numberOfInvalids();
+                    if (errors) {
+                    var message = errors == 1
+                        ? 'You missed 1 field. It has been highlighted'
+                        : 'You missed ' + errors + ' fields. They have been highlighted';
+                        alert(message);
+                    } 
+                }
+
+            })
+        });
+    </script>
+
+  </body>
+</html>

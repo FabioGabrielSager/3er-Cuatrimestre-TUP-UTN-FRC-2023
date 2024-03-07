@@ -1,0 +1,14 @@
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/bin/Debug/net7.0/DB.deps.json
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/bin/Debug/net7.0/DB.dll
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/bin/Debug/net7.0/DB.pdb
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/obj/Debug/net7.0/DB.csproj.AssemblyReference.cache
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/obj/Debug/net7.0/DB.GeneratedMSBuildEditorConfig.editorconfig
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/obj/Debug/net7.0/DB.AssemblyInfoInputs.cache
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/obj/Debug/net7.0/DB.AssemblyInfo.cs
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/obj/Debug/net7.0/DB.csproj.CoreCompileInputs.cache
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/obj/Debug/net7.0/DB.dll
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/obj/Debug/net7.0/refint/DB.dll
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/obj/Debug/net7.0/DB.pdb
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/obj/Debug/net7.0/ref/DB.dll
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/bin/Debug/net7.0/DB.runtimeconfig.json
+/home/shackgerc/Repositorios/ProgIII/tarea_01_06_Ejer_2_CDF/DB/obj/Debug/net7.0/DB.genruntimeconfig.cache

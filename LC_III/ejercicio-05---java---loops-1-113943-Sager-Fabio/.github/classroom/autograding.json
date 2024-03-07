@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Test Example",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase1\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 30
+    },
+    {
+      "name": "Test integer 5",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase2\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 30
+    },
+    {
+      "name": "Test Border",
+      "setup": "",
+      "run": "mvn test -Dtest=\"AppTest#testCase3\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 40
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+body{
+    font-family: sans-serif;
+}
+
+
+#rb-sexo0{
+    border: 1px solid black; 
+}
+
+#rb-sexo1{
+    border: 1px solid black; 
+}
+
+#rb-sexo2{
+    border: 1px solid black; 
+}
+
+.error-class{
+    color: red;
+    font-style: italic;
+}
